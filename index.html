@@ -7,7 +7,7 @@
     <title>Maxim's Pets</title>
 </head>
 <body>
-    <h1 class="heading">Maxim's Pets</h1>
+    <h1 class="heading" id="header">Maxim's Pets</h1>
     <p>We help pets find their perfect owner!</p>
 
     <ol>
@@ -23,11 +23,11 @@
     </ol>
 
     <p>Adopt a pet:</p>
-    <input type="radio">Dog</input>
-    <input type="radio">Cat</input><br/><br/>
+    <input type="radio" name="petType" id="dogRadio">Dog</input>
+    <input type="radio" name="petType" id="catRadio">Cat</input><br/><br/>  
     
-    <label>Fur Color:</label>
-    <select>
+    <label id="label">Fur Color:</label>
+    <select id="drop1">
         <option>Brown</option>
         <option>Black</option>
         <option>White</option>
@@ -35,7 +35,7 @@
     </select> <br/><br/>
     
     <label>Eye Color:</label>
-    <select>
+    <select id="drop2">
         <option>Blue</option>
         <option>Brown</option>
         <option>Black</option>
@@ -43,14 +43,17 @@
     </select> 
 
     <ul>
-        <li><input type="checkbox">Small pet</li>
-        <li><input type="checkbox">Guard Animal</li>
-        <li><input type="checkbox">Security Animal</li>
-        <li><input type="checkbox">Toy Pet</li>
-        <li><input type="checkbox">Potty-trained</li>  
+        <li><input type="checkbox" id="check1" name="Small pet">Small pet</li>
+        <li><input type="checkbox" id="check2" name="Guard Animal">Guard Animal</li>
+        <li><input type="checkbox" id="check3" name="Security Animal">Security Animal</li>
+        <li><input type="checkbox" id="check4" name="Toy Pet">Toy Pet</li>
+        <li><input type="checkbox" id="check5" name="Potty-trained">Potty-trained</li>  
+        <li><input type="checkbox" id="check6" name="Purring animal">Purring animal (cat only)</li>
     </ul>
 
-    <input placeholder="Name the pet">
-    <button>Submit</button>
+    <input placeholder="Name the pet" type="text" id="petName">
+    <input type="submit" value="Adopt a pet" id="submitButton">
+
+    <script src="script.js"></script>
 </body>
 </html>
